@@ -29,7 +29,7 @@ class School
   end
   
   def sort
-   @roster.map do |g,n|
+   @roster.each do |g,n|
      n.sort
    end   
   end
