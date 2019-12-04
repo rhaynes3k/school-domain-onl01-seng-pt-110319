@@ -34,7 +34,7 @@ class School
      s_arr.push(n.sort)
      
    end
-   binding.pry
+   #binding.pry
    
   end 
 end
