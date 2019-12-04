@@ -29,12 +29,11 @@ class School
   end
   
   def sort
-   s_arr = {}
    @roster = roster
    @roster.map do |g,n|
      n.sort
    end   
- end
+  end
 end
 
 
