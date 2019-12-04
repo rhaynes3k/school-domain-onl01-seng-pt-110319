@@ -29,8 +29,9 @@ class School
   end
   
   def sort
-   @roster.each do |g,n|
-     n.sort
+    n_hash = {}
+   @roster.map do |g,n|
+     n_hash[g] << n.sort
    end   
   end
 end
