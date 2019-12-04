@@ -31,7 +31,7 @@ class School
   def sort
    s_arr = []  
    @roster.each do |g, n|
-     s_arr.push(n.sort)
+     s_arr.push(n.sort).to_h
      
    end
    #binding.pry
