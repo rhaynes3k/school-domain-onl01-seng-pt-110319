@@ -29,14 +29,12 @@ class School
   end
   
   def sort
-   s_arr = []  
-   @roster.each do |g, n|
-     s_arr.push(n.sort).to_h
-     
-   end
-   #binding.pry
-   
-  end 
+   s_arr = {}
+   @roster = roster
+   @roster.map do |g,n|
+     n.sort
+   end   
+ end
 end
 
 
