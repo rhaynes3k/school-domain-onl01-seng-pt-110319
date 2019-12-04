@@ -33,7 +33,8 @@ class School
      n.sort
      
    end
-   binding.pry
+   #binding.pry
+   return
  end 
 end
 
