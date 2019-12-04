@@ -21,7 +21,7 @@ class School
 
   def grade(grade)
     n_arr = []
-   @@roster[grade].each do |n|
+   @@roster[grade].map do |n|
        n_arr.push(n)     
     end
     n_arr
