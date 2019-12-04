@@ -2,26 +2,26 @@ class School
   def initialize(sch)
     roster = {}
     @school = sch
-    @roster = roster
+    @@roster = roster
 #binding.pry
   end
   
   def roster
-    @roster
+    @@roster
   end
   
   def add_student(name, grade)
-    if @roster.has_key?(grade)
-      @roster[grade] << name
+    if @@roster.has_key?(grade)
+      @@roster[grade] << name
     else
-    @roster[grade] = []
-    @roster[grade] << name
+    @@roster[grade] = []
+    @@roster[grade] << name
     end
   end  
 
   def grade(grade)
     n_arr = []
-    @roster[grade].each do |n|
+   @@roster[grade].each do |n|
        n_arr.push(n)     
     end
     n_arr
