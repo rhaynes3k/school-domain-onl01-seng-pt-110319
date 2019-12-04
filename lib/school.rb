@@ -29,7 +29,6 @@ class School
   end
   
   def sort
-   @roster = roster
    @roster.map do |g,n|
      n.sort
    end   
