@@ -31,9 +31,9 @@ class School
   def sort
    @roster.each do |g, n|
      n.sort
-     binding.pry
+     
    end
-   
+   binding.pry
  end 
 end
 
